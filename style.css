@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --main-color: #4a00e0;
+  --bg-color: #fff;
+  --hover: hsl(260, 100%, 51%);
+
+  --big-font: 3.2rem;
+  --medium-font: 1.8rem;
+  --p-font: 0.941rem;
+}
+html,body{
+  padding: 0px;
+  scroll-behavior: smooth;
+  background: transparent;
+  background-color: var(--main-color);
+}
+
+header, img{
+  padding: 0px;
+  margin: 0px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+ul{
+  display: flex;
+  justify-content:center;
+}
+a,li,.navigation{
+  color:black;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+a{
+    margin: 0px 30px;
+}
+.home-text span {
+  font-size: var(--medium-font);
+  font-family: 'IM Fell English SC', serif;
+  font-weight: 500;
+  color: #000;
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  font-family: 'IM Fell English SC', serif;
+  color: #000;
+}
+.home-text h2 {
+  color: #000;
+  font-size: 1.1rem;
+  font-family: 'IM Fell English SC', serif;
+  font-weight: 400;
+}
+.home-text p {
+  color: #000;
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: var(--hover);
+}
+.navigation:hover{
+  color: #4a00e0;
+}
+.container{
+  width: 70%;
+  margin : 30px auto;
+}
+
+.article{
+  color: rgb(12, 11, 0);
+  font-size: 2.5rem;
+  /*font-style: italic;*/
+  font-family: 'Roboto', sans-serif;
+}
+.content{
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 2px 5px 4px 3px (0 0 0 / 30% );
+}
+.content_img{
+  width: 300px;
+  height: 200px;
+  margin: 0px 30px;
+}
+
+p{
+    font-size: 1.6rem;
+    color: #216;
+}
+
+footer{
+  background:#fff;
+}
+
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+form input,
+textarea {
+  padding: 12px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: hsla(260, 100%, 44%, 0.1);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+form input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+}
+form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-button {
+  width: 80px;
+  cursor: pointer;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact-button:hover {
+  background: var(--hover);
+}
